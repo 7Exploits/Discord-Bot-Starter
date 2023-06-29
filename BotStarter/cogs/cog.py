@@ -12,10 +12,6 @@ class command(commands.Cog):
     @commands.command()
     async def ping(self, ctx):
         await ctx.send("pong")
-
-    @commands.command()
-    async def hi(self, ctx):
-        await ctx.send("hello")
-
+        
 async def setup(bot):
     await bot.add_cog(command(bot))
